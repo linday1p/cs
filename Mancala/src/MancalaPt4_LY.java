@@ -1,5 +1,5 @@
 //Linda Yip
-//Mancala Part 3
+//Mancala Part 4
 //10.07.19
 //Description: Program outputs a mancala board using stars and spaces
 //		with numbers in the spaces
@@ -10,6 +10,13 @@ public class MancalaPt4_LY
 
 	public static void main( String[ ] args )
 	{
+		int[] beadArray = new int[14];
+		
+		startingArray(beadArray);
+		printArray(beadArray);
+		
+		System.out.println();
+		
 		showBoard ( );
 
 	}// end main
@@ -113,6 +120,36 @@ public class MancalaPt4_LY
 
 	}// end showBoard
 
+	/*************************************************************************
+	 * startingArray
+	 * Description: fills array of beads
+	 * parameter: beadArray
+	 * return: None
+	 *************************************************************************/
+	public static void startingArray(int[] beadArray)
+	{
+		for (int i = 0; i < beadArray.length; ++i)
+		{
+			beadArray[i] = 4;
+		}
+		beadArray[6] = 0;
+		beadArray[13] = 0;
+	}//end startingArray
+	
+	/*************************************************************************
+	 * printArray
+	 * Description: prints out the array of beads
+	 * parameter: beadArray
+	 * return: None
+	 *************************************************************************/
+	public static void printArray (int[] beadArray)
+	{
+		for (int i = 0; i < beadArray.length; ++i)
+		{
+			System.out.print(beadArray[i] + " ");
+		}
+	}//end printArray
+	
 }
 
 // Problems:
