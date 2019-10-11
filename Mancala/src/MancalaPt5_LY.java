@@ -190,7 +190,7 @@ public class MancalaPt5_LY
 			System.out.printf ( "*%4d  ", beadArray[i] );
 		}
 		//System.out.print ( "*      *" );
-		System.out.println ( );
+		System.out.println ("*");
 	}// end showBottomBins
 	
 }
